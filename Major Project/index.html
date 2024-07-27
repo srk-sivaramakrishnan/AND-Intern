@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <h1 class="title">Weather App</h1>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="./assets/img/search.png" alt="Search"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="./assets/img/rain.png" class="weather-icon" alt="Weather Icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">coimbatore</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./assets/img/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./assets/img/wind.png" alt="Wind Speed Icon">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forecast-controls">
+            <button class="arrow" id="prevDay"><img src="./assets/img/left-arrow.png" alt="Previous Day"></button>
+            <button class="arrow" id="nextDay"><img src="./assets/img/right-arrow.png" alt="Next Day"></button>
+        </div>
+        <div id="forecast" class="forecast"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
