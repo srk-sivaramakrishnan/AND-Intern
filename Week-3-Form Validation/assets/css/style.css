@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background for the body */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better contrast */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF; /* Blue color for the heading */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Dark gray color for labels */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc; /* Light gray border for inputs */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text color for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Blue shadow on focus */
+    outline: none;
+}
+
+.error {
+    color: #dc3545; /* Red color for error messages */
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+.success {
+    color: #28a745; /* Green color for success message */
+    font-size: 16px;
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.phone-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#countryCode {
+    width: 80px; /* Reduced width for country code */
+    margin-right: 10px;
+    background-color: #f9f9f9; /* Same background as input fields */
+}
+
+#phone {
+    flex: 1;
+    background-color: #f9f9f9; /* Same background as input fields */
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#password {
+    width: 100%;
+    padding-right: 30px; /* Space for the icon */
+    background-color: #f9f9f9; /* Same background as input fields */
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007BFF; /* Blue color for the password icon */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="button"] {
+    background-color: #6c757d; /* Gray background for non-submit buttons */
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
